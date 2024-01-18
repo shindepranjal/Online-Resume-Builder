@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+
+<link rel="stylesheet" href="style.css"/>
 
 
 
@@ -12,6 +14,117 @@
   <title>Online Resume Builder </title>
 </head>
 <body>
+
+  <!--here goes html code -->
+  <div class="container">
+  <h1 class="text-center my-2">Online Resume Builder</h1>
+  <p class="text-center">Made By Pranjali Shinde </p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <!--first column-->
+      <h3>Personal Details</h3>
+      <div class="form-group">
+        <label for="nameField">Your Name</label>
+        <input type="text" id="nameField" placeholder="Enter your name" class="form-control"/>
+    </div>
+
+    <div class="form-group mt-2">
+      <label for="contactField">Your Contact</label>
+      <input type="text" id="contactField" placeholder="Enter Your Contact No." class="form-control"/>
+  </div>
+
+  <div class="form-group mt-2">
+    <label for="addressField">Your Address</label>
+    <textarea type="text" id="addressField" placeholder="Enter Address" class="form-control"></textarea>
+  </div>
+
+  <p class="text-secondary mt-3">We won't share your personal details with <anyone>Important Links</anyone></p>
+
+  <div class="form-group mt-2">
+    <label for="GithubField">Github</label>
+    <input type="text" id="GithubField" placeholder="Enter your Github Link" class="form-control"/>
+</div>
+
+<div class="form-group mt-2">
+  <label for="LinkedinField">Linkedin</label>
+  <input type="text" id="LinkedinField" placeholder="Enter your Linkedin Link" class="form-control"/>
+</div>
+
+<div class="form-group mt-2">
+  <label for="leetcodeField">Leetcode</label>
+  <input type="text" id="leetcodeField" placeholder="Enter your Leetcode Profile" class="form-control"/>
+</div>
+
+    </div>
+
+    <div class="col-md-6">
+      <!--second column-->
+      <h3>Professional Details</h3>
+
+      <div class="form-group mt-2">
+        <label for="ObjectiveField">Objective</label>
+        <textarea 
+         placeholder="Enter here" 
+         class="form-control "></textarea>
+      </div> 
+
+      <div class="form-group mt-2" id="we">
+        <label for="">Work Exprience</label>
+        <textarea 
+        placeholder="Enter here"
+         class="form-control weField"></textarea>
+
+         <!--new textarea-->
+
+
+     
+      <div class="container text-center mt-2" id="weAddButton">
+        <button onclick ="addNewWEField()" class="btn btn-primary btn-sm mt-2">Add</button>
+      </div>
+    </div>
+
+
+
+      <div class="form-group mt-2">
+        <label for="">Projects</label>
+        <textarea 
+        placeholder="Enter here"
+         class="form-control prField"></textarea>
+      </div>
+      <div class="container text-center">
+        <button class="btn btn-primary btn-sm mt-2">Add</button>
+      </div>
+
+      <div class="form-group mt-2">
+        <label for="">Academic Qualification</label>
+        <textarea 
+        placeholder="Enter here"
+         class="form-control eqField"></textarea>
+     
+      <div class="container text-center mt-2"id="aqAddButton">
+        <button class="btn btn-primary btn-sm mt-2">Add</button>
+      </div>
+    </div>
+
+      <div class="form-group">
+        <label for="emailField">Email</label>
+        <input type="text" id="emailField" class="form-control"/>
+      
+    
+  </div>
+
+<div class="container text-center mt- 3">
+  <button class="btn btn-primary" id="generateResume">Generate Resume</button>
+</div>
+
+  </div>
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
   <script src="script.js"></script>
   
