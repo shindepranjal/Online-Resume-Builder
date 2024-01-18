@@ -15,112 +15,251 @@
 </head>
 <body>
 
-  <!--here goes html code -->
-  <div class="container">
+  
+  <div class="container" id="cv-form">
   <h1 class="text-center my-2">Online Resume Builder</h1>
-  <p class="text-center">Made By Pranjali Shinde </p>
+  <p class="text-center">Made By Pranjali Shinde<anyone> ☺️ We won't share your personal details</anyone> </p>
+  
 
   <div class="row">
     <div class="col-md-6">
-      <!--first column-->
+      <!-- ###@@@@ first column -->
       <h3>Personal Details</h3>
       <div class="form-group">
         <label for="nameField">Your Name</label>
-        <input type="text" id="nameField" placeholder="Enter your name" class="form-control"/>
+        <input 
+        type="text"
+         id="nameField" 
+         placeholder="Enter your name"
+          class="form-control"/>
     </div>
 
     <div class="form-group mt-2">
       <label for="contactField">Your Contact</label>
-      <input type="text" id="contactField" placeholder="Enter Your Contact No." class="form-control"/>
+      <input 
+      type="text" 
+      id="contactField" 
+      placeholder="Enter Your Contact No." 
+      class="form-control"/>
   </div>
+
+  <div class="form-group">
+    <label for="emailField">Email</label>
+    <input 
+    type="text"
+     id="emailField" 
+     placeholder="Enter Your Email" 
+     class="form-control"/>
+</div>
 
   <div class="form-group mt-2">
     <label for="addressField">Your Address</label>
-    <textarea type="text" id="addressField" placeholder="Enter Address" class="form-control"></textarea>
+    <textarea 
+    type="text" 
+    id="addressField" 
+    placeholder="Enter Address" 
+    class="form-control">
+  </textarea>
   </div>
 
-  <p class="text-secondary mt-3">We won't share your personal details with <anyone>Important Links</anyone></p>
+  <p class="text-secondary mt-3">Important Links</p>
 
   <div class="form-group mt-2">
     <label for="GithubField">Github</label>
-    <input type="text" id="GithubField" placeholder="Enter your Github Link" class="form-control"/>
+    <input
+     type="text"
+      id="GithubField" 
+      placeholder="Enter your Github Profile" 
+      class="form-control"/>
 </div>
 
 <div class="form-group mt-2">
   <label for="LinkedinField">Linkedin</label>
-  <input type="text" id="LinkedinField" placeholder="Enter your Linkedin Link" class="form-control"/>
+  <input 
+  type="text" 
+  id="LinkedinField" 
+  placeholder="Enter your Linkedin Profile" 
+  class="form-control"/>
 </div>
 
 <div class="form-group mt-2">
   <label for="leetcodeField">Leetcode</label>
-  <input type="text" id="leetcodeField" placeholder="Enter your Leetcode Profile" class="form-control"/>
+  <input 
+  type="text"
+   id="leetcodeField"
+    placeholder="Enter your Leetcode Profile"
+     class="form-control"/>
 </div>
 
     </div>
 
     <div class="col-md-6">
-      <!--second column-->
+      <!-- second column -->
       <h3>Professional Details</h3>
 
       <div class="form-group mt-2">
         <label for="ObjectiveField">Objective</label>
         <textarea 
+        id="ObjectiveField"
          placeholder="Enter here" 
-         class="form-control "></textarea>
+         class="form-control ">
+        </textarea>
       </div> 
 
       <div class="form-group mt-2" id="we">
-        <label for="">Work Exprience</label>
+        <label for="weField">Work Exprience</label>
         <textarea 
         placeholder="Enter here"
          class="form-control weField"></textarea>
 
-         <!--new textarea-->
-
-
-     
+         <!-- new textarea -->
+    
       <div class="container text-center mt-2" id="weAddButton">
-        <button onclick ="addNewWEField()" class="btn btn-primary btn-sm mt-2">Add</button>
+        <button onclick ="addNewWEField()" 
+        class="btn btn-primary btn-sm mt-2">Add</button>
       </div>
     </div>
 
 
 
-      <div class="form-group mt-2">
+      <div class="form-group mt-2" id="PR">
         <label for="">Projects</label>
         <textarea 
         placeholder="Enter here"
          class="form-control prField"></textarea>
+      
+      <div class="container text-center mt-2"id="PRAddButton">
+        <button onclick ="addNewPRField()"
+        class="btn btn-primary btn-sm mt-2">Add</button>
       </div>
-      <div class="container text-center">
-        <button class="btn btn-primary btn-sm mt-2">Add</button>
-      </div>
+    </div>
 
-      <div class="form-group mt-2">
+      <div class="form-group mt-2" id="aq">
         <label for="">Academic Qualification</label>
         <textarea 
         placeholder="Enter here"
          class="form-control eqField"></textarea>
      
       <div class="container text-center mt-2"id="aqAddButton">
-        <button class="btn btn-primary btn-sm mt-2">Add</button>
+        <button onclick ="addNewAQField()"
+        class="btn btn-primary btn-sm mt-2">Add</button>
       </div>
     </div>
 
-      <div class="form-group">
-        <label for="emailField">Email</label>
-        <input type="text" id="emailField" class="form-control"/>
       
-    
-  </div>
 
 <div class="container text-center mt- 3">
-  <button class="btn btn-primary" id="generateResume">Generate Resume</button>
+  <button onclick="generateCV()" class="btn btn-primary mt-3" id="generateCV">Generate Resume</button>
 </div>
 
   </div>
 
+  <!-- cv template -->
 
+  <div class="container" id="cv-template">
+    <h1>Resume</h1>
+    <div class="row">
+    <div class="col-md-4 text-center py-5 background">
+      <!--first col-->
+      <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="" class="img-fluid myimg"/>
+
+      <div class="container">
+        <h2 >Personal Details</h2>
+        <p id="nameT1">Pranjali Pramod Shinde</p>
+        <p id="contactT">+91 1234567890</p>
+        <p id="emailT">shinde@gmail.com</p>
+        <p id="addressT">Delhi, India</p>
+        <hr />
+
+        <p>
+          <a id="giT"href="#1" target="_blank" class="text-dark">https://www.github.com/pranjali123</a>
+        </p>
+        <p>
+          <a id="liT" href="#1" target="_blank" class="text-dark">https://www.Linkedin.com/pranjali123</a>
+        </p>
+        <p>
+          <a id="leT" href="#1" target="_blank" class="text-dark">https://www.leetcode.com/pranjali123</a>
+        </p>
+
+      </div>
+    </div>
+  
+
+
+    <div class="col-md-8 py-5">
+      <!--second col -->
+      <h1 id="nameT2" class="text-center" style="font-weight: 980">Pranjali Pramod Shinde</h1>
+
+
+      <!--objective card-->
+
+      <div class="card mt-4">
+        <div class="card-header background">
+          <h3>Objective</h3>
+        </div>
+         <div class="card-body">
+          <p id ="objectiveT"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere at quia laudantium repudiandae vel, eveniet, veritatis libero quisquam id ex illum veniam ducimus tenetur debitis dolore amet ea? Maxime, ipsam.</p>
+        </div>
+     </div>
+
+
+     <!--work exprience-->
+
+     <div class="card mt-4">
+      <div class="card-header background">
+        <h3>work exprience</h3>
+      </div>
+       <div class="card-body">
+        <ul id="weT">
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+        </ul>
+          </div> 
+        </div>
+
+        <!--Project-->
+
+     <div class="card mt-4">
+      <div class="card-header background">
+        <h3>Projects</h3>
+      </div>
+       <div class="card-body">
+        <ul id="prT">
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+        </ul>
+          </div> 
+        </div>
+
+
+        <!--Academic Qualification-->
+        <div class="card mt-4">
+          <div class="card-header background">
+            <h3>Academic Qualification</h3>
+          </div>
+           <div class="card-body">
+            <ul id="aqT">
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+            </ul>
+              </div> 
+            </div>
+
+
+<div class="container text-center mt- 3">
+  <button onlinkclick="generateCV()" class="btn btn-primary mt-3" id="generateResume">Download Resume</button>
+</div>
+    </div>
+  </div>
+</div>
+    
+    
+  
+    
   
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
